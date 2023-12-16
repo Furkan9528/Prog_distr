@@ -1,0 +1,22 @@
+{
+  "generator-jhipster": {
+    "adminPassword": "admin",
+    "appsFolders": ["gateway", "invoice", "review"],
+    "dbRandomPassword": "36e00f4bfae9c8d2f1e7b37e5206d7fec92e4f4664b19b3d728a00e08c32",
+    "deploymentApplicationType": "microservice",
+    "directoryPath": "../",
+    "dockerPushCommand": "docker push",
+    "dockerRepositoryName": "furkan9528",
+    "ingressDomain": null,
+    "ingressType": null,
+    "istio": false,
+    "jhipsterVersion": "8.1.0",
+    "jwtSecretKey": "ZDQwNzgzNjQyNjhhYzY5ZDIxNmFjNzdjZjU3NjQwNjAwMjU0NWRiZGIyZTRiNjQ1MDk3MTcyNGM3YzQ0ZGQwYjJjNDFhZTBiNDFiOTVjY2VhZjhjNzgxNTU1YTViYzliMmI0Mw==",
+    "kubernetesNamespace": "jhipster",
+    "kubernetesServiceType": "LoadBalancer",
+    "kubernetesStorageClassName": null,
+    "kubernetesUseDynamicStorage": false,
+    "monitoring": "no",
+    "serviceDiscoveryType": "eureka"
+  }
+}

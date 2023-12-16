@@ -1,0 +1,2 @@
+org.springframework.test.context.ContextCustomizerFactory = com.salaboy.gateway.\
+    config.SqlTestContainersSpringContextCustomizerFactory

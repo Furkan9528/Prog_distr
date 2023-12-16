@@ -1,0 +1,18 @@
+apiVersion: skaffold/v1
+kind: Config
+build:
+  artifacts:
+    - image: furkan9528/gateway
+      context: ../gateway
+      jib: {}
+    - image: furkan9528/invoice
+      context: ../invoice
+      jib: {}
+    - image: furkan9528/review
+      context: ../review
+      jib: {}
+  tagPolicy:
+    envTemplate:
+      template: "{{.IMAGE_NAME}}:latest"
+deploy:
+  kustomize: {}

@@ -1,0 +1,32 @@
+{
+  "generator-jhipster": {
+    "applicationIndex": 0,
+    "applicationType": "gateway",
+    "applications": {
+      "invoice": {
+        "applicationIndex": 1,
+        "serverPort": "8081"
+      }
+    },
+    "authenticationType": "jwt",
+    "baseName": "gateway",
+    "buildTool": "maven",
+    "cacheProvider": "hazelcast",
+    "clientFramework": "react",
+    "devServerPort": 9060,
+    "entities": ["Invoice", "Shipment"],
+    "jhipsterVersion": "8.1.0",
+    "jwtSecretKey": "YzYyNGYxNjAyOGY5NjBmY2M0NDViMDdiNDUyOWExNjRkOWYyMTVjZDZlMGE3MGUwZDZiYzg3NjM4Y2Y3NDVkODI4ZDE1ZDBiMjMzYTU3ODI2MTNjNjk2NzMwNjEwMjA4NGU0YmU3YTQ3ZWE5N2MwZGNiZWUyNWMzOWQxMDM5NDU=",
+    "languages": ["en"],
+    "lastLiquibaseTimestamp": 1702680702000,
+    "monorepository": true,
+    "nativeLanguage": "en",
+    "packageFolder": "com/salaboy/gateway",
+    "packageName": "com.salaboy.gateway",
+    "prodDatabaseType": "mysql",
+    "reactive": true,
+    "serviceDiscoveryType": "eureka",
+    "skipCommitHook": true,
+    "testFrameworks": ["protractor"]
+  }
+}

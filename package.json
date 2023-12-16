@@ -1,0 +1,35 @@
+{
+  "workspaces": {
+    "packages": [
+      "gateway",
+      "invoice",
+      "review"
+    ]
+  },
+  "scripts": {
+    "backend:build-cache": "concurrently npm:backend:build-cache:gateway npm:backend:build-cache:invoice npm:backend:build-cache:review",
+    "backend:build-cache:gateway": "npm run backend:build-cache --workspace gateway --if-present",
+    "backend:build-cache:invoice": "npm run backend:build-cache --workspace invoice --if-present",
+    "backend:build-cache:review": "npm run backend:build-cache --workspace review --if-present",
+    "ci:backend:test": "npm run ci:backend:test --workspaces --if-present",
+    "ci:e2e:package": "npm run ci:docker:build --workspaces --if-present && npm run java:docker --workspaces --if-present",
+    "ci:e2e:run": "npm run e2e:headless --workspaces --if-present",
+    "ci:frontend:test": "npm run ci:frontend:test --workspaces --if-present",
+    "java:docker": "concurrently npm:java:docker:gateway npm:java:docker:invoice npm:java:docker:review",
+    "java:docker:arm64": "concurrently npm:java:docker:arm64:gateway npm:java:docker:arm64:invoice npm:java:docker:arm64:review",
+    "java:docker:arm64:gateway": "npm run java:docker:arm64 --workspace gateway --if-present",
+    "java:docker:arm64:invoice": "npm run java:docker:arm64 --workspace invoice --if-present",
+    "java:docker:arm64:review": "npm run java:docker:arm64 --workspace review --if-present",
+    "java:docker:gateway": "npm run java:docker --workspace gateway --if-present",
+    "java:docker:invoice": "npm run java:docker --workspace invoice --if-present",
+    "java:docker:review": "npm run java:docker --workspace review --if-present",
+    "watch": "concurrently npm:watch:gateway npm:watch:invoice npm:watch:review",
+    "watch:gateway": "npm run watch --workspace gateway --if-present",
+    "watch:invoice": "npm run watch --workspace invoice --if-present",
+    "watch:review": "npm run watch --workspace review --if-present",
+    "webapp:test": "npm run webapp:test --workspaces --if-present"
+  },
+  "devDependencies": {
+    "concurrently": "8.2.2"
+  }
+}

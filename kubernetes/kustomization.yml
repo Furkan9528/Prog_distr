@@ -1,0 +1,22 @@
+commonLabels:
+  app.kubernetes.io/genereted-by: JHipster
+
+namespace: jhipster
+
+resources:
+  - namespace.yml
+  # Individual apps
+  - gateway-k8s/gateway-deployment.yml
+  - gateway-k8s/gateway-service.yml
+  - gateway-k8s/gateway-mysql.yml
+  - invoice-k8s/invoice-deployment.yml
+  - invoice-k8s/invoice-service.yml
+  - invoice-k8s/invoice-mysql.yml
+  - review-k8s/review-deployment.yml
+  - review-k8s/review-service.yml
+  - review-k8s/review-mysql.yml
+  # service discovery eureka/consul
+  - registry-k8s/jhipster-registry.yml
+  - registry-k8s/application-configmap.yml
+
+patchesJson6902:

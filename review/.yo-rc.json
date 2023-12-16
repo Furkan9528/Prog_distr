@@ -1,0 +1,23 @@
+{
+  "generator-jhipster": {
+    "applicationIndex": 2,
+    "applicationType": "microservice",
+    "authenticationType": "jwt",
+    "baseName": "review",
+    "buildTool": "maven",
+    "entities": [],
+    "jhipsterVersion": "8.1.0",
+    "jwtSecretKey": "NThmNTRhNjY1YzgzMzVjZGUxMjNkMWJmNDY0YjJlYzA4ZWRjYzYxNzBhMTMwMjVkM2MxNDJjZjA4NjJmYWU4YTdjZmQ1NmRmMzk5ZmZjZWIxYjMxYjQ0MGVkODJjNzA3YmUwNzhhY2Y3NzM3Y2M3YTYzMDA4MjBjZjM5NTQyYzA=",
+    "languages": ["en"],
+    "monorepository": true,
+    "nativeLanguage": "en",
+    "packageFolder": "com/salaboy/review",
+    "packageName": "com.salaboy.review",
+    "prodDatabaseType": "mysql",
+    "serverPort": "8081",
+    "serviceDiscoveryType": "eureka",
+    "skipClient": true,
+    "skipCommitHook": true,
+    "skipUserManagement": true
+  }
+}

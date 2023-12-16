@@ -1,0 +1,24 @@
+{
+  "generator-jhipster": {
+    "applicationIndex": 1,
+    "applicationType": "microservice",
+    "authenticationType": "jwt",
+    "baseName": "invoice",
+    "buildTool": "maven",
+    "entities": ["Invoice", "Shipment"],
+    "jhipsterVersion": "8.1.0",
+    "jwtSecretKey": "YzczMzZmOWE1ODc3ZDZlMTczYjgzYjhjNWE4NjBjNWU1ZWM4MDZiYWIxZDhiYThiZGY2Yjk5Y2NjM2U4ZTk0NTlmNjFjYzg2MmMwYTRiZWQyMDZkMTRhNDEwN2MyZWZkMmY0MDBlM2UxMzhhMTgwYTM2MWQ1ODJlYTNhNmU2OGI=",
+    "languages": ["en"],
+    "lastLiquibaseTimestamp": 1702680703000,
+    "monorepository": true,
+    "nativeLanguage": "en",
+    "packageFolder": "com/salaboy/invoice",
+    "packageName": "com.salaboy.invoice",
+    "prodDatabaseType": "mysql",
+    "serverPort": "8081",
+    "serviceDiscoveryType": "eureka",
+    "skipClient": true,
+    "skipCommitHook": true,
+    "skipUserManagement": true
+  }
+}
