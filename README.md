@@ -35,9 +35,9 @@ kubectl port-forward svc/gateway 8080:8080 -n jhipster
 
 ## Information
 
-![alt text](./titre1.jpg)
+![alt text](./titre3.jpg)
 
-![alt text](./titre2.jpg)
+![alt text](./titre4.jpg)
 
 
 
