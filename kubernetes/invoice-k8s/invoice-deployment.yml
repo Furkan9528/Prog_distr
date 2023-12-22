@@ -45,8 +45,8 @@ spec:
                 sleep 10
               done
       containers:
-        - name: gateway-app
-          image: furkan9528/gateway
+        - name: invoice-app
+          image: furkan9528/invoice
           imagePullPolicy: Never
           env:
             - name: SPRING_PROFILES_ACTIVE
