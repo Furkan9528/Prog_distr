@@ -6,7 +6,7 @@ Nous avons créé une application web Java avec JHipster, en utilisant l'approch
 
 - Une passerelle qui héberge également l'interface utilisateur.
 - Service de facturation (qui héberge trois entités : Expédition, Commande, Facture).
-- Service de révision (qui n'a pas d'entité mais sera en charge de vérifier les entités du service de facturation)
+- Service de révision (qui n'a pas d'entité mais sera en charge de vérifier les entités du service de facturation).
 
 ## Exigences
 
